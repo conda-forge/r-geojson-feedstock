@@ -1,4 +1,4 @@
-{% set version = '0.3.2' %}
+{% set version = "0.3.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/geojson_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/geojson/geojson_{{ version }}.tar.gz
-  sha256: 3bdf66995fa7bf3ee7a0bc4d86b9969e57b5d715b947b40f5027d187a7440e47
+  sha256: 075fb8f60c8baf2f9b5714cbefe9dc5436c85ad87023a75d05ff2c090de0743b
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -48,11 +48,8 @@ test:
 about:
   home: https://github.com/ropensci/geojson
   license: MIT
-  summary: Classes for 'GeoJSON' to make working with 'GeoJSON' easier. Includes S3 classes for
-    'GeoJSON' classes with brief summary output, and a few methods such as extracting
-    and adding bounding boxes, properties, and coordinate reference systems; working
-    with  newline delimited 'GeoJSON'; linting through the 'geojsonlint'  package; and
-    serializing to/from 'Geobuf' binary 'GeoJSON'  format.
+  summary: Classes for 'GeoJSON' to make working with 'GeoJSON' easier. Includes S3 classes for 'GeoJSON' classes with brief summary output, and a few methods such as extracting and adding bounding boxes, properties, and coordinate reference systems; working with  newline delimited 'GeoJSON'; linting through the 'geojsonlint'  package;
+    and serializing to/from 'Geobuf' binary 'GeoJSON'  format.
   license_family: MIT
   license_file: LICENSE
 
