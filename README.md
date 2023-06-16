@@ -1,11 +1,11 @@
-About r-geojson
-===============
+About r-geojson-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-geojson-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ropensci/geojson
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-geojson-feedstock/blob/main/LICENSE.txt)
 
 Summary: Classes for 'GeoJSON' to make working with 'GeoJSON' easier. Includes S3 classes for 'GeoJSON' classes with brief summary output, and a few methods such as extracting and adding bounding boxes, properties, and coordinate reference systems; working with  newline delimited 'GeoJSON'; linting through the 'geojsonlint'  package; and serializing to/from 'Geobuf' binary 'GeoJSON'  format.
 
